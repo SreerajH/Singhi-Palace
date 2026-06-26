@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-fraunces: "Fraunces", Georgia, serif;
+  --font-work-sans: "Work Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #f6f1e7;
+    color: #1c1c1a;
+    font-family: var(--font-work-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #b08d4f;
+    color: #f6f1e7;
+  }
+
+  :focus-visible {
+    outline: 2px solid #b08d4f;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-fraunces);
+  }
+
+  .font-body {
+    font-family: var(--font-work-sans);
+  }
+
+  /* Fraunces variable axes — soft optical character at large sizes */
+  .fraunces-soft {
+    font-variation-settings: "opsz" 72, "SOFT" 80, "WONK" 0;
+  }
+
+  .fraunces-editorial {
+    font-variation-settings: "opsz" 144, "SOFT" 60, "WONK" 0;
+  }
+
+  /* Brass hairline divider */
+  .brass-line {
+    height: 1px;
+    background: #b08d4f;
+    opacity: 0.4;
+  }
+
+  /* Brass border on portrait */
+  .brass-frame {
+    box-shadow: inset 0 0 0 3px #b08d4f, 0 0 0 1px rgba(176, 141, 79, 0.2);
+  }
+
+  /* Animated underline for CTAs */
+  .cta-link {
+    position: relative;
+    display: inline-block;
+  }
+
+  .cta-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+  }
+
+  .cta-link:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* Scrollbar for gallery hall */
+  .gallery-scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery-scroll-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
