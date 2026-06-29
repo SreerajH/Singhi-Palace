@@ -82,11 +82,11 @@ export const testimonials = [
 
 export const galleryImages = [
   { src: "/images/gallery-1.jpg", caption: "The Grand Ballroom" },
-  { src: "/images/gallery-2.jpg", caption: "Courtyard at Dusk" },
-  { src: "/images/gallery-3.jpg", caption: "The Marble Foyer" },
-  { src: "/images/gallery-4.jpg", caption: "Banquet Hall, North Wing" },
-  { src: "/images/gallery-5.jpg", caption: "Garden Terrace" },
-  { src: "/images/gallery-6.jpg", caption: "The Heritage Corridor" },
+  { src: "/images/gallery-2.jpg", caption: "Floral Arch Banquet Setting" },
+  { src: "/images/gallery-3.jpg", caption: "The Palace Entrance" },
+  { src: "/images/gallery-4.jpg", caption: "Event Night — Main Hall" },
+  { src: "/images/gallery-5.jpg", caption: "Intimate Banquet Arrangement" },
+  { src: "/images/gallery-6.jpg", caption: "Singhi Palace at Dusk" },
 ];
 
 export const navLinks = {
